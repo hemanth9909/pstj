@@ -1,12 +1,12 @@
-1. Build Array from Permutation
-code:
+2. Shuffle the Array 
 class Solution {
-    public int[] buildArray(int[] nums) {
-        int n = nums.length;
-        int[] ans = new int[n];
+    public int[] shuffle(int[] nums, int n) {
+        int[] ans = new int[2 * n];
+        int index = 0;
 
         for (int i = 0; i < n; i++) {
-            ans[i] = nums[nums[i]];
+            ans[index++] = nums[i];
+            ans[index++] = nums[i + n];
         }
 
         return ans;
