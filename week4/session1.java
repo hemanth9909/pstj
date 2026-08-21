@@ -61,3 +61,9 @@ public class Main {
         System.out.println(bank.withdraw(10, 50));
     }
 }
+Output:
+true
+true
+true
+false
+false
